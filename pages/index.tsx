@@ -4,8 +4,13 @@ import React from 'react'
 import Header from '../components/Header'
 import { client, urlFor } from '../lib/client';
 import Link from 'next/link';
+import { Post } from '../typing';
 
-const index = ({ postData }) => {
+interface Props {
+  postData: [Post]
+}
+
+const index = ({ postData }: Props) => {
 
   console.log(postData);
 
